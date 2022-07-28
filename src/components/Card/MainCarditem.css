@@ -1,0 +1,25 @@
+.cart-table-items-image{
+    position: relative;
+}
+
+.cart-table-items-image img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.cart-table-items-image p {
+    margin-left: 1rem;
+    border: 2px solid red;
+    width: 5rem;
+    display: inline-block;
+    font-size: 0.8rem;
+    padding-top: -5rem;
+    
+}
+.cart-remove-btn {
+    background-color: red;
+    padding: 0.2rem;
+    margin-left: 0.5rem;
+    color:white
+}
+

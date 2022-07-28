@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.about-header-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 2rem;
+    /* color: white; */
+}
+
+.about-header-main .abount-header-content .link1 {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+
+    
+}
+
+.about-section2 {
+    text-align: center;
+    font-size: 4.5rem;
+    background-color: #777;
+    color: white;
+    padding-bottom: 5rem;
+    
+}
+
+.about-header-main .abount-header-content a.active {
+    color: red;
+}
+
+
+
+
+.about-page {
+    display: flex;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.about-page .about-image img{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 200px;
+
+
+}
+
+.about-page .about-content {
+    margin-left: 2rem;
+    
+}

@@ -1,0 +1,22 @@
+/* .maincard-table {
+    border: 2px solid black;
+} */
+
+.closemodal-content {
+    display: flex;
+    justify-content: end;
+}
+
+
+.maincard-table .maincard-headrow th:first-child{
+padding-right: 7rem;
+
+}
+.maincard-table .maincard-headrow th:nth-child(2){
+    padding-left: 1rem;
+}
+
+.maincard-table .maincard-headrow th:nth-child(3){
+    padding-left: 2rem;
+}
+

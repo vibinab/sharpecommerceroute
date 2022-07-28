@@ -7,6 +7,15 @@
   pointer-events: none;
 }
 
+.modalcard {
+  position: fixed;
+  right: 0;
+  top:5%;
+  /* margin-right: 2rem; */
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

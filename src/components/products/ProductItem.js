@@ -21,6 +21,7 @@ export const ProductItem = (props) => {
   <h1 style={{textAlign:"center",marginBottom:"2rem"}}><NavLink to={`productpage/${props.title}`} className="product-item-link">{props.title}</NavLink></h1>
     
     {/* <h3 style={{marginBottom:'2rem'}}>{props.title}</h3> */}
+    
     <img src={props.image}></img>
 
      <div className='product-item-details'>

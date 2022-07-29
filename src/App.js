@@ -12,6 +12,7 @@ import { Home } from './pages/Home';
 import { Contact } from './pages/Contact';
 
 import { Productpage } from './components/products/Productpage';
+import { Login } from './pages/Login';
 
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -37,7 +38,7 @@ function App() {
        <BrowserRouter> 
       
        <Routes>
-
+      <Route path="login" element={<Login />} />
       <Route path="about" element={<About />} /> 
       
       <Route path="home" element={<Home />} />
@@ -57,29 +58,13 @@ function App() {
       }
       />
 
-      {/* <Route path="*" element={<Product />} /> */}
-      {/* <CartProvider> */}
-    {/* {maincartisshown &&  <div className='modalcard'><MainCard onclose={hideCartHnadler} /></div>}   
-      <Header  onshowcart={showCartHnadler}/> */}
-      
-      {/* <Product /> */}
-      {/* <Route path="/" element={<Product />}></Route> */}
-      
      
-      {/* <Footer /> */}
-
-      
-      {/* </CartProvider> */}
-      {/* </Route> */}
-     {/* <Route path="product" element={<Productdetails /> }/> */}
 
      
        </Routes>
       </BrowserRouter> 
 
-      {/* <CartProvider>
-        <Product/>
-      </CartProvider> */}
+   
       <Footer />
 
 

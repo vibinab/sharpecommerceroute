@@ -12,6 +12,7 @@ export const Header = (props) => {
             <NavLink activeClassName='linkbtn' className='link'to="/"> <span>STORE</span></NavLink>
             <NavLink activeClassName='linkbtn' className='link'to="about"> <span>ABOUT</span></NavLink>
             <NavLink activeClassName='linkbtn'className='link' to="contact"> <span>CONTACT</span></NavLink>
+            <NavLink activeClassName='linkbtn'className='link' to="login"> <span>LOGIN</span></NavLink>
 
                
               

@@ -16,40 +16,78 @@
     text-decoration: none;
 }
 
+.home-section2{
+  text-align: center;
+  color:white;
+  background-color: #777;
+  padding: 2rem;
+  height: 18rem;
+}
+
+.home-section2 h1 {
+        font-size: 4rem;
+}
+
+.home-section2 .album {
+    border: 2px solid #56CCF2;
+    padding: 0.6rem;
+    background: none;
+    margin-top: 2rem;
+    color: white;
+    width: 10rem;
+
+}
+
+.home-section2 .playbtn {
+    cursor: pointer;
+    display: block;
+    border: 2px solid #56CCF2;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 200;
+    margin: 20px auto;
+    background: inherit;
+    color: #56CCF2;
+}
+
+
+
 .home-header .home-header-content a.active{
     color: red;
     }
 
 
+ .homelist-content {
 
-.homelist-content {
-    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
-    
-    /* background-color: red; */
     border-bottom: 2px solid black;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
+} 
+table {
+    border-spacing: 10px;
+    /* border: 2px solid black; */
+  }
+
+  table td:first-child{
+    width: 6rem;
+  }
+
+table td{
+    /* border: 2px solid red; */
+    margin-left: 2rem;
+    width: 14rem;
 }
 
-
-.homelist-content .homelist-list {
-    display: flex;
-    
-}
-
-.homelist-content .homelist-list li {
-    list-style-type: none;
-    margin-left: 4rem;
-    margin-top: 1rem;
-}
 
 .homelist-content .homelist-button {
-    background-color: blue;
-    width: 7rem;
+    background-color: #56CCF2;
+    width: 10rem;
     color: white;
     padding: 0.2rem;
     margin-bottom: 0.5rem;
+    margin-left: 6rem;
 }
 

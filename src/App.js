@@ -50,8 +50,9 @@ function App() {
       <Route path="/" element={
         <CartProvider>
         {maincartisshown &&  <div className='modalcard'><MainCard onclose={hideCartHnadler} /></div>}   
+         
       <Header  onshowcart={showCartHnadler}/>
-          <Product />
+          <Product onproductcart={showCartHnadler} />
         </CartProvider>
       }
       />

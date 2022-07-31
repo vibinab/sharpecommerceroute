@@ -53,8 +53,10 @@ const productsArr = [
     
     
     
-export const ProductLists = () => {
+export const ProductLists = (props) => {
 
+  let usersend=props.senduserdetails
+  console.log("prdductlist", usersend)
 
   return (
     <>
@@ -72,6 +74,7 @@ export const ProductLists = () => {
                title={product.title} 
                price={product.price}
                image={product.imageUrl}
+               userdetail={usersend}
                />
                </div>
                </>

@@ -9,7 +9,7 @@
 
 .cart-table-items-image p {
     margin-left: 1rem;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 5rem;
     display: inline-block;
     font-size: 0.8rem;

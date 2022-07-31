@@ -2,19 +2,7 @@
 
 
 
-.home-header-main {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    color:white;
-    height: 2.5rem;
-}
 
-.link2 {
-    color: white;
-    margin-left: 1rem;
-    text-decoration: none;
-}
 
 .home-section2{
   text-align: center;

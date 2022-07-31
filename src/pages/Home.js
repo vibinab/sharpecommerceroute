@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Home.css"
 import { NavLink } from 'react-router-dom'
+import { Navhead } from '../components/layout/Navhead'
 
 const data= [
     {date:'JUL16', place:'DETROIT, MI',name:'DTE ENERGY MUSIC THEATRE'},
@@ -14,16 +15,8 @@ const data= [
 export const Home = () => {
   return (
     <>
-    <div className='home-header-main'>
-      <div className='home-header-content'>
-      <NavLink activeClassName='linkbtn2' className='link2' to="home"> <span>HOME</span></NavLink>
-      <NavLink activeClassName='linkbtn2' className='link2' to="/"> <span>STORE</span></NavLink>
-      <NavLink activeClassName='linkbtn2' className='link2' to="about"> <span>ABOUT</span></NavLink>
-      <NavLink activeClassName='linkbtn2' className='link2' to="contact"> <span>CONTACT</span></NavLink>
-
-      </div>
-    </div>
-  
+    
+      <Navhead/>
       <div className='home-section2'>
         <h1>The Generics</h1>
         <button className='album'>Get our latest album</button>

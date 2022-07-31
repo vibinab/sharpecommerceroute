@@ -1,13 +1,17 @@
 import React, { useContext, useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Navigate, useLocation, useNavigate, } from 'react-router-dom';
 import "./Login.css"
 import AuthContext from '../store/auth-context';
+import { Navhead } from '../components/layout/Navhead';
 
-export const Login = () => {
+
+export const Login = (props) => {
  
     const [user, setuser]=useState('');
     const[ pass, setpass]=useState('');
     const history =useNavigate();
+    const afterredirect=useLocation();
+    
 
     const authctx=useContext(AuthContext)
     
@@ -29,6 +33,8 @@ export const Login = () => {
 
         const username=user;
         const password=pass;
+         props.userdetail(username)
+
         console.log(username)
         console.log(password)
         // const userdata= {
@@ -74,6 +80,8 @@ export const Login = () => {
      console.log(data.idToken)
      authctx.login(data.idToken);
      history('/')
+     
+    
 })
 .catch(err=> {
     // alert(err.message)
@@ -85,7 +93,9 @@ setisloading(false)
     }
 
   return (
-    <>
+    <>   
+
+        <Navhead />
         <div className='loginform'>
             <form onSubmit={submithandler}>
                 <div>

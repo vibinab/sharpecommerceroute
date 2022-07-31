@@ -2,6 +2,9 @@
     border: 2px solid black;
 } */
 
+.maincard-table {
+    z-index: 100;
+}
 .closemodal-content {
     display: flex;
     justify-content: end;

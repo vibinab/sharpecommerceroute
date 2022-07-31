@@ -5,14 +5,14 @@
 }
 
 
-.about-header-main{
+/* .about-header-main{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
     height: 2rem;
     /* color: white; */
-}
+/* }
 
 .about-header-main .abount-header-content .link1 {
     color: white;
@@ -20,7 +20,7 @@
     margin-left: 1rem;
 
     
-}
+}  */
 
 .about-section2 {
     text-align: center;

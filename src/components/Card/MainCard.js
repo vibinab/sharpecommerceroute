@@ -1,8 +1,9 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import "./MainCard.css"
 import { MainCarditem } from './MainCarditem'
 
 import CartContext from '../../store/cart-context'
+import axios from 'axios'
 
 const cartElements = [
 
@@ -47,8 +48,51 @@ const cartElements = [
     
 
 export const MainCard = (props) => {
+     
+
+
+    const [caritemsapi, setcaritemsapi]=useState([])
+    console.log(props)
+
+    let useremail=props.userdata;
+    let enteredemail=useremail.replace('@','')
+    let finalemail=enteredemail.replace('.','')
+    console.log("maincatd",finalemail)
+
+    
+    useEffect(()=> {
+
+        axios.get(`https://crudcrud.com/api/e427f8779fb04a85a0ef78c82ddcfd28/shca${finalemail}`)
+        .then((res)=> {
+             console.log("server",res.data)
+            //  const loadedcart=[];
+            //  for(const key in res.data){
+            //   loadedcart.push({
+            //     id:key,
+            //     title:key[0].title
+                
+                
+                
+            // //     releaseDate:data[key].releaseDate,
+            //   });
+             setcaritemsapi(res.data)
+
+            //  }
+            }
+        
+        )
+        .catch((err)=> {
+            console.log(err)
+        })
+
+    },[])
+    
+     
+    console.log("api", caritemsapi)
+    
 
     const cartcintx= useContext(CartContext)
+    console.log("mainitem",cartcintx.items)
 
     const numberofcarts=cartcintx.items.reduce((cur,item)=> {
         return cur+item.price
@@ -67,10 +111,10 @@ export const MainCard = (props) => {
             <th>price
             <hr style={{width:'100%'}}></hr> 
             </th>
-            <th className='main-headrow-quantity'>quantity
+            
             
             <hr style={{width:'100%'}}></hr>
-            </th>
+            
         </tr>
         <p>total:{numberofcarts}</p>
 
@@ -78,15 +122,16 @@ export const MainCard = (props) => {
         
     </table>
     {
-        cartcintx.items.map((element)=> {
+        cartcintx.items.map((item)=> {
             return (
                 
                 <tr>
                 <MainCarditem 
-                title={element.title}
-                price={element.price}
-                image={element.imageUrl}
-                quantity={element.quantity} 
+                title={item.title}
+                price={item.price}
+               
+                image={item.image}
+                
                
                 />
                  </tr>

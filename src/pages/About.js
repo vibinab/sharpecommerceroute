@@ -1,11 +1,13 @@
 import React from 'react'
 import "./About.css"
-import { NavLink } from 'react-router-dom'
+
+import { Navhead } from '../components/layout/Navhead';
 
 export const About = () => {
   return (
     <>
-    <div className='about-header-main'>
+    <Navhead />
+    {/* <div className='about-header-main'>
       <div className='abount-header-content'>
       <NavLink activeClassName='linkbtn1' className='link1' to="home"> <span>HOME</span></NavLink>
       <NavLink activeClassName='linkbtn1' className='link1'to="/"> <span>STORE</span></NavLink>
@@ -13,7 +15,7 @@ export const About = () => {
       <NavLink activeClassName='linkbtn1'className='link1' to="contact"> <span>CONTACT</span></NavLink>
 
       </div>
-    </div>
+    </div> */}
   
       <h1 className='about-section2'>The Generics</h1>
   

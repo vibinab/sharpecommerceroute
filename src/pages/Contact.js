@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./Contact.css"
-import { NavLink } from 'react-router-dom';
+import { Navhead } from '../components/layout/Navhead';
 
 export const Contact = () => {
 
@@ -51,15 +51,9 @@ export const Contact = () => {
 
   return (
     <>
-    <div className='contact-header-main'>
-      <div className='contact-header-content'>
-      <NavLink activeClassName='linkbtn3' className='link3' to="home"> <span>HOME</span></NavLink>
-      <NavLink activeClassName='linkbtn3' className='link3'to="/"> <span>STORE</span></NavLink>
-      <NavLink activeClassName='linkbtn3' className='link3'to="about"> <span>ABOUT</span></NavLink>
-      <NavLink activeClassName='linkbtn3'className='link3' to="contact"> <span>CONTACT</span></NavLink>
 
-      </div>
-    </div>
+    <Navhead />
+    
     <div className='formcontent'>
       <form onSubmit={submithandler}>
         <div className='form-inputs'>
